@@ -1,16 +1,9 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <script src="/js/decodBinary.js"></script>
-    <script src="/js/decodMorse.js"></script>
-    <script src="/js/encodBinary.js"></script>
-    <script src="/js/encodMorse.js"></script>
-    <script src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Codificador</title>
 </head>
 <body>
@@ -20,27 +13,31 @@
 
             <tr><td>.-</td> <td>-...</td> <td>-.-.</td> <td>-..</td> <td>.</td> <td>..-.</td> <td>--.</td> <td>....</td> <td>..</td> <td>.---</td> <td>-.-</td> <td>.-..</td> <td>--</td> <td>-.</td> <td>---</td> <td>.--.</td> <td>--.-</td> <td>.-.</td> <td>...</td> <td>-</td> <td>..-</td> <td>...-</td> <td>.--</td> <td>-..-</td> <td>-.--</td> <td>--..</td></tr>
         </table>
-            <tr><td>.</td></tr>
-        </table>
     </div>
     <button id="invert">Inverter</button>
     <div class="convert-text">
         <div class="input">
             <h1 id="type-title">Texto</h1>
-            <textarea name="input" id="input-text" cols="30" rows="10" class="area" style="resize: none;"></textarea><button id="decipher-btn">Codificador</button>
-            <br>
+            <textarea name="input" id="input-text" class="area" cols="25" rows="10" style="resize: none;"></textarea>
+            <br><button id="decipher-btn">Codificar</button>
         </div>
-
+        
         <div class="output">
             <h1>Resultado</h1>
-            <textarea name="input" id="output-text" cols="30" rows="10" class="area" style="resize: none;" disabled></textarea>
+            <textarea name="input" id="output-text" class="area" cols="25" rows="10" style="resize: none;" disabled></textarea>
             <select name="" id="select-type">
-                <option
-                value="morse">Morse</option>
+                <option value="morse">Morse</option>
                 <option value="binary">Binário</option>
             </select>
             <button id="copy-btn">Copiar</button>
         </div>
+        
     </div>
+
+    <script src="./js/decodBinary.js"></script>
+    <script src="./js/decodMorse.js"></script>
+    <script src="./js/encodBinary.js"></script>
+    <script src="./js/encodMorse.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
